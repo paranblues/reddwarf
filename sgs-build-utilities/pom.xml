@@ -39,10 +39,15 @@
   <!-- Deployment repository information -->
   <distributionManagement>
     <repository>
-      <id>java.net-maven2-repository</id>
-      <name>java.net Maven2 Repository</name>
-      <url>java-net:/maven2-repository/trunk/repository/</url>
+      <id>nexus-xworlds</id>
+      <name>xworlds.org</name>
+      <url>http://nexus.php-maven.org/content/repositories/xworlds-java-releases</url>
     </repository>
+    <snapshotRepository>
+      <id>nexus-xworlds</id>
+      <name>xworlds.org</name>
+      <url>http://nexus.php-maven.org/content/repositories/xworlds-java-snapshots</url>
+    </snapshotRepository>
   </distributionManagement>
 
 </project>
