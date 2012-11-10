@@ -62,37 +62,6 @@
 	  <artifactId>maven-remote-resources-plugin</artifactId>
 	</plugin>
 
-	<!-- The berkeleydb binary package must be retrieved and unpacked
-	     Before the test phase so that they are available during
-	     runtime of the unit tests.
-	     To enable this dependency unpack, activate the unpack-bdb-binaries
-	     execution id in the child POM -->
-	<plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-dependency-plugin</artifactId>
-          <executions>
-            <execution>
-              <id>unpack-bdb-binaries</id>
-              <goals>
-		<goal>unpack</goal>
-              </goals>
-              <configuration>
-		<artifactItems>
-                  <artifactItem>
-                    <groupId>org.reddwarfserver.ext.berkeleydb</groupId>
-                    <artifactId>db-binaries</artifactId>
-		    <type>zip</type>
-                    <overWrite>false</overWrite>
-                    <outputDirectory>
-		      ${project.build.directory}/
-		    </outputDirectory>
-                  </artifactItem>
-		</artifactItems>
-              </configuration>
-            </execution>
-          </executions>
-	</plugin>
-
 	
       </plugins>
     </pluginManagement>
