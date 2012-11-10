@@ -54,11 +54,6 @@
       <groupId>org.reddwarfserver.ext.berkeleydb</groupId>
       <artifactId>db</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.reddwarfserver.ext.berkeleydb</groupId>
-      <artifactId>db-binaries</artifactId>
-      <type>zip</type>
-    </dependency>
 
     <dependency>
       <groupId>net.sf.jung</groupId>
@@ -122,20 +117,6 @@
 	</executions>
       </plugin>
 
-      <!-- The berkeleydb binary package must be retrieved and unpacked
-	   Before the test phase so that they are available during
-	   runtime of the unit tests. -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>unpack-bdb-binaries</id>
-	    <phase>generate-test-resources</phase>
-          </execution>
-        </executions>
-      </plugin>
-      
       <!-- Create a clean test-output directory -->
       <plugin>
 	<groupId>org.apache.maven.plugins</groupId>
