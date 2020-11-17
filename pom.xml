@@ -227,10 +227,16 @@
   </profiles>
 
   <repositories>
+  <repository>
+      <id>javastream</id>
+      <name>javastream Maven2 Repository</name>
+      <url>http://http://maven.javastream.de/</url>
+      <layout>default</layout>
+  </repository>
     <repository>
       <id>maven</id>
       <name>Central Apache Maven2 Repository</name>
-      <url>http://repo1.maven.org/maven2/</url>
+      <url>https://repo1.maven.org/maven2/</url>
       <layout>default</layout>
     </repository>
     <repository>
