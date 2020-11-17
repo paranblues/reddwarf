@@ -230,7 +230,7 @@
   <repository>
       <id>javastream</id>
       <name>javastream Maven2 Repository</name>
-      <url>http://http://maven.javastream.de/</url>
+      <url>http://maven.javastream.de/</url>
       <layout>default</layout>
   </repository>
     <repository>
